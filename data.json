@@ -1,0 +1,119 @@
+{
+    "advisors": [
+	{
+	    "name": "Carlos Scheidegger",
+	    "students": ["Rebecca Faust", "Zhenge Zhao"]
+	},
+	{
+	    "name": "Kate Isaacs",
+	    "students": []
+	},
+	{
+	    "name": "Kristi Potter",
+	    "attendees": ["Graham Johnson"]
+	},
+	{
+	    "name": "Danielle Szafir",
+	    "students": ["Sandra Bae", "Keke Wu", "Matt Whitlock"]
+	},
+	{
+	    "name": "Alex Endert",
+	    "students": []
+	},
+	{
+	    "name": "Paul Rosen",
+	    "students": ["Ghulam Jilani Quadri", "Bhavana Doppalapudi", "Hamza Elhamdadi"]
+	},
+	{
+	    "name": "Ross Maciejewski",
+	    "students": ["Yixuan Wang", "Fan Lei"]
+	},
+	{
+	    "name": "Enrico Bertini",
+	    "students": []
+	},
+	{
+	    "name": "Michelle Borkin",
+	    "students": ["Aditeya Pandey", "Laura South", "Uzma Haque Syeda"]
+	},
+	{
+	    "name": "Matthew Kay",
+	    "students": ["Xiaoping Pu", "Maryam Hedayati", "Brian Hall", "Abhraneel Sarma"]
+	},
+	{
+	    "name": "Cody Dunne",
+	    "students": ["Liudas Panavas", "Justin Raynor", "David Saffo", "Sara Di Bartolomeo"]
+	},
+	{
+	    "name": "Miriah Meyer",
+	    "students": ["Jen Rogers", "Derya Akbaba", "Jimmy Moore"]
+	},
+	{
+	    "name": "Brian Summa",
+	    "students": []
+	},
+	{
+	    "name": "Guoning Chen",
+	    "students": ["Nguyen Phan", "Lei Si"]
+	},
+	{
+	    "name": "Lane Harrison",
+	    "students": ["Noelle Rakotondravony", "Yiren Ding"]
+	},
+	{
+	    "name": "Matt Berger",
+	    "students": ["Saroj Kumar Sahoo", "Ava Zhao"]
+	},
+	{
+	    "name": "Eric Ragan",
+	    "students": ["Mahsan Nourani", "Shae Esmaelli"]
+	},
+	{
+	    "name": "Wesley Willett",
+	    "students": []
+	},
+	{
+	    "name": "Josh Levine",
+	    "students": []
+	},
+	{
+	    "name": "Arvind Satyanarayan",
+	    "students": ["Crystal Lee", "Alan Lundgard", "Harini Suresh", "Jonathan Zong", "Aspen Hopkins", "Angie Boggust"]
+	},
+	{
+	    "name": "Alex Lex",
+	    "students": ["Kiran Ghadave", "Devin Lange", "Haihan Lin"]
+	}
+    ],
+    "series": [
+	{
+	    "series": 1,
+	    "presenters": ["Bhavana Doppalapudi",
+			   "Saroj Kumar Sahoo",
+			   "Yiren Ding",
+			   "Ghulam Jilani Quadri",
+			   "Zhenge Zhao",
+			   "Nguyen Phan",
+			   "Brian Hall",
+			   "Noelle Rakotondravony",
+			   "Jen Rogers",
+			   "Derya Akbaba",
+			   "Hamza Elhamdadi",
+			   "Abhraneel Sarma",
+			   "Ava Zhao",
+			   "Lei Si",
+			   "Rebecca Faust",
+			   "Jimmy Moore",
+			   "Xiaoping Pu",
+			   "Maryam Hedayati"]
+	    advisors: [
+		"Paul Rosen", "Carlos Scheidegger", "Matthew Kay", "Miriah Meyer", "Matt Berger", "Lane Harrison", "Guoning Chen"
+	    ]
+	}
+    ]
+}
+	
+	
+
+	
+	

@@ -1,0 +1,159 @@
+Python 3.9.4 (default, Apr  5 2021, 01:49:30)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.23.0 -- An enhanced Interactive Python. Type '?' for help.
+dom
+In [1]: import random
+
+In [2]: import json
+
+In [3]: j = json.read(open("./data.json"))
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-3-4e5996857046> in <module>
+----> 1 j = json.read(open("./data.json"))
+
+AttributeError: module 'json' has no attribute 'read'
+
+In [4]: j = json.load(open("./data.json"))
+---------------------------------------------------------------------------
+JSONDecodeError                           Traceback (most recent call last)
+<ipython-input-4-b4eb1613788f> in <module>
+----> 1 j = json.load(open("./data.json"))
+
+/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py in load(fp, cls, object_hook, parse_float, parse_int, parse_constant, object_pairs_hook, **kw)
+    291     kwarg; otherwise ``JSONDecoder`` is used.
+    292     """
+--> 293     return loads(fp.read(),
+    294         cls=cls, object_hook=object_hook,
+    295         parse_float=parse_float, parse_int=parse_int,
+
+/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py in loads(s, cls, object_hook, parse_float, parse_int, parse_constant, object_pairs_hook, **kw)
+    344             parse_int is None and parse_float is None and
+    345             parse_constant is None and object_pairs_hook is None and not kw):
+--> 346         return _default_decoder.decode(s)
+    347     if cls is None:
+    348         cls = JSONDecoder
+
+/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py in decode(self, s, _w)
+    335
+    336         """
+--> 337         obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+    338         end = _w(s, end).end()
+    339         if end != len(s):
+
+/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/decoder.py in raw_decode(self, s, idx)
+    351         """
+    352         try:
+--> 353             obj, end = self.scan_once(s, idx)
+    354         except StopIteration as err:
+    355             raise JSONDecodeError("Expecting value", s, err.value) from None
+
+JSONDecodeError: Expecting property name enclosed in double quotes: line 66 column 2 (char 1420)
+
+In [5]: j = json.load(open("./data.json"))
+
+In [6]: presenters = []
+
+In [7]: advisors = j["advisors"][:]
+
+In [8]: random.shuffle(advisors)
+
+In [9]: [a["name"] for a in advisors]
+Out[9]:
+['Kate Isaacs',
+ 'Matthew Kay',
+ 'Josh Levine',
+ 'Paul Rosen',
+ 'Miriah Meyer',
+ 'Matt Berger',
+ 'Guoning Chen',
+ 'Alex Endert',
+ 'Carlos Scheidegger',
+ 'Lane Harrison',
+ 'Kristi Potter',
+ 'Danielle Szafir',
+ 'Cody Dunne',
+ 'Ross Maciejewski',
+ 'Arvind Satyanarayan',
+ 'Eric Ragan',
+ 'Enrico Bertini',
+ 'Alex Lex',
+ 'Brian Summa',
+ 'Wesley Willett',
+ 'Michelle Borkin']
+
+In [10]: for a in advisors:
+    ...:     students = a.get("students", [])
+    ...:     if len(students) == 0:
+    ...:         print("advisor %s with no students" % a["name"])
+    ...:     else:
+    ...:         presenters.extend((a["name"], s) for s in students)
+    ...:     if len(presenters) >= 18:
+    ...:         break
+    ...:
+advisor Kate Isaacs with no students
+advisor Josh Levine with no students
+advisor Alex Endert with no students
+
+In [11]: presenters
+Out[11]:
+[('Matthew Kay', 'Xiaoping Pu'),
+ ('Matthew Kay', 'Maryam Hedayati'),
+ ('Matthew Kay', 'Brian Hall'),
+ ('Matthew Kay', 'Abhraneel Sarma'),
+ ('Paul Rosen', 'Ghulam Jilani Quadri'),
+ ('Paul Rosen', 'Bhavana Doppalapudi'),
+ ('Paul Rosen', 'Hamza Elhamdadi'),
+ ('Miriah Meyer', 'Jen Rogers'),
+ ('Miriah Meyer', 'Derya Akbaba'),
+ ('Miriah Meyer', 'Jimmy Moore'),
+ ('Matt Berger', 'Saroj Kumar Sahoo'),
+ ('Matt Berger', 'Ava Zhao'),
+ ('Guoning Chen', 'Nguyen Phan'),
+ ('Guoning Chen', 'Lei Si'),
+ ('Carlos Scheidegger', 'Rebecca Faust'),
+ ('Carlos Scheidegger', 'Zhenge Zhao'),
+ ('Lane Harrison', 'Noelle Rakotondravony'),
+ ('Lane Harrison', 'Yiren Ding')]
+
+>>> exit()
+
+--------------------------------------------------------------------------------
+
+Python 3.9.4 (default, Apr  5 2021, 01:49:30)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.23.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import json
+
+In [2]: import random
+
+In [3]: j = json.load(open("./data.json"))
+
+In [4]: presenters = j["series"][0]["presenters"][:]
+
+In [5]: random.shuffle(presenters)
+
+In [6]: presenters
+Out[6]:
+['Bhavana Doppalapudi',
+ 'Saroj Kumar Sahoo',
+ 'Yiren Ding',
+ 'Ghulam Jilani Quadri',
+ 'Zhenge Zhao',
+ 'Nguyen Phan',
+ 'Brian Hall',
+ 'Noelle Rakotondravony',
+ 'Jen Rogers',
+ 'Derya Akbaba',
+ 'Hamza Elhamdadi',
+ 'Abhraneel Sarma',
+ 'Ava Zhao',
+ 'Lei Si',
+ 'Rebecca Faust',
+ 'Jimmy Moore',
+ 'Xiaoping Pu',
+ 'Maryam Hedayati']
+
+--------------------------------------------------------------------------------
+
