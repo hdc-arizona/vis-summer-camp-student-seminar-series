@@ -3,7 +3,7 @@
 ## Setup
 
 - presentations on zoom, link to be shared privately
-- afterparty on one of gathertown, ohyay.co or wonder.me, still TBD
+- afterparty at gather.town sponsored by the Visual Analytics and Data Exploration Research Lab (vader.lab.asu.edu) at Arizona State University
 
 ## Series 1
 
