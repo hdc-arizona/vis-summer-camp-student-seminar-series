@@ -42,11 +42,10 @@ Everyone else is, of course, encouraged to attend as well!
 
 ### Tentative Schedule
 
-[Series 1 livedoc](https://docs.google.com/document/d/1Pf7exjP51WNTx8DvjM8yftg8XuyZxp5X_-xmEgldOQM/edit#)
-
-* 2021-05-19, Week 1: Bhavana Doppalapudi, Saroj Kumar Sahoo, Yiren Ding
+* 2021-05-19, Week 1: Bhavana Doppalapudi, Saroj Kumar Sahoo, Noelle Rakotondravony
+  [Series 1 livedoc](https://docs.google.com/document/d/1Pf7exjP51WNTx8DvjM8yftg8XuyZxp5X_-xmEgldOQM/edit#)
 * 2021-05-26, Week 2: Ghulam Jilani Quadri, Zhenge Zhao, Nguyen Phan
-* 2021-06-02, Week 3: Brian Hall, Noelle Rakotondravony, Jen Rogers,
+* 2021-06-02, Week 3: Brian Hall, Yiren Ding, Jen Rogers,
 * 2021-06-09, Week 4: Derya Akbaba, Hamza Elhamdadi, Abhraneel Sarma,
 * 2021-06-16, Week 5: Ava Zhao, Lei Si, Rebecca Faust
 * 2021-06-23, Week 6: Jimmy Moore, Xiaoping Pu, Maryam Hedayati
