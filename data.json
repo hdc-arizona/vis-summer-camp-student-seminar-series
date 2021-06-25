@@ -113,6 +113,13 @@
             "advisors": [
                 "Paul Rosen", "Carlos Scheidegger", "Matthew Kay", "Miriah Meyer", "Matt Berger", "Lane Harrison", "Guoning Chen"
             ]
+        },
+        {
+            "series": 2,
+            "presenters": ["Liudas Panavas"],
+            "advisors": [
+                "Cody Dunne"
+            ]
         }
     ]
 }
