@@ -157,3 +157,151 @@ Out[6]:
 
 --------------------------------------------------------------------------------
 
+Python 3.9.5 (default, May  4 2021, 03:33:11)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.23.0 -- An enhanced Interactive Python. Type '?' for help.
+on
+
+In [1]: import json
+
+In [2]: j = json.read(open("data.json"))
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-2-b13555279d62> in <module>
+----> 1 j = json.read(open("data.json"))
+
+AttributeError: module 'json' has no attribute 'read'
+
+In [3]: j = json.load(open("data.json"))
+
+In [4]: presenters = []
+
+In [5]: advisors = j["advisors"][:]
+
+In [6]: random.shuffle(advisors)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-6-13f0b4483f60> in <module>
+----> 1 random.shuffle(advisors)
+
+NameError: name 'random' is not defined
+
+In [7]: import random
+
+In [8]: random.shuffle(advisors)
+
+In [9]: for a in advisors:
+   ...:     an = a["name"]
+   ...:     if an in j["series"][0]["advisors"]:
+   ...:         print("Skipping %s" % an)
+   ...:         continue
+   ...:     students = a.get("students", [])
+   ...:     if len(students) == 0:
+   ...:         print("Skipping %s with no students" % an)
+   ...:     else:
+   ...:         presenters.extend((a["name"], s) for s in students)
+   ...:     if len(presenters) >= 18:
+   ...:         break
+   ...:
+Skipping Kristi Potter with no students
+Skipping Lane Harrison
+Skipping Matt Berger
+Skipping Miriah Meyer
+
+In [10]: presenters
+Out[10]:
+[('Jessica Hullman', 'Hyeok Kim'),
+ ('Cody Dunne', 'Liudas Panavas'),
+ ('Cody Dunne', 'Justin Raynor'),
+ ('Cody Dunne', 'David Saffo'),
+ ('Cody Dunne', 'Sara Di Bartolomeo'),
+ ('Eric Ragan', 'Mahsan Nourani'),
+ ('Eric Ragan', 'Shae Esmaelli'),
+ ('Josh Levine', 'Brian Bollen'),
+ ('Josh Levine', 'Kairong Jiang'),
+ ('Arvind Satyanarayan', 'Crystal Lee'),
+ ('Arvind Satyanarayan', 'Alan Lundgard'),
+ ('Arvind Satyanarayan', 'Harini Suresh'),
+ ('Arvind Satyanarayan', 'Jonathan Zong'),
+ ('Arvind Satyanarayan', 'Aspen Hopkins'),
+ ('Arvind Satyanarayan', 'Angie Boggust'),
+ ('Alex Lex', 'Kiran Ghadave'),
+ ('Alex Lex', 'Devin Lange'),
+ ('Alex Lex', 'Haihan Lin')]
+
+In [11]: exit()
+
+--------------------------------------------------------------------------------
+
+Python 3.9.5 (default, May  4 2021, 03:33:11)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.23.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: p = [('Jessica Hullman', 'Hyeok Kim'),
+   ...:  ('Cody Dunne', 'Liudas Panavas'),
+   ...:  ('Cody Dunne', 'Justin Raynor'),
+   ...:  ('Cody Dunne', 'David Saffo'),
+   ...:  ('Cody Dunne', 'Sara Di Bartolomeo'),
+   ...:  ('Eric Ragan', 'Mahsan Nourani'),
+   ...:  ('Eric Ragan', 'Shae Esmaelli'),
+   ...:  ('Josh Levine', 'Brian Bollen'),
+   ...:  ('Josh Levine', 'Kairong Jiang'),
+   ...:  ('Arvind Satyanarayan', 'Crystal Lee'),
+   ...:  ('Arvind Satyanarayan', 'Alan Lundgard'),
+   ...:  ('Arvind Satyanarayan', 'Harini Suresh'),
+   ...:  ('Arvind Satyanarayan', 'Jonathan Zong'),
+   ...:  ('Arvind Satyanarayan', 'Aspen Hopkins'),
+   ...:  ('Arvind Satyanarayan', 'Angie Boggust'),
+   ...:  ('Alex Lex', 'Kiran Ghadave'),
+   ...:  ('Alex Lex', 'Devin Lange'),
+   ...:  ('Alex Lex', 'Haihan Lin')]
+
+In [2]: p = list(a[1] for a in p)
+
+In [3]: p
+Out[3]:
+['Hyeok Kim',
+ 'Liudas Panavas',
+ 'Justin Raynor',
+ 'David Saffo',
+ 'Sara Di Bartolomeo',
+ 'Mahsan Nourani',
+ 'Shae Esmaelli',
+ 'Brian Bollen',
+ 'Kairong Jiang',
+ 'Crystal Lee',
+ 'Alan Lundgard',
+ 'Harini Suresh',
+ 'Jonathan Zong',
+ 'Aspen Hopkins',
+ 'Angie Boggust',
+ 'Kiran Ghadave',
+ 'Devin Lange',
+ 'Haihan Lin']
+
+In [4]: import random
+
+In [5]: random.shuffle(p)
+
+In [6]: p
+Out[6]:
+['Harini Suresh',
+ 'Shae Esmaelli',
+ 'Crystal Lee',
+ 'Hyeok Kim',
+ 'David Saffo',
+ 'Sara Di Bartolomeo',
+ 'Kairong Jiang',
+ 'Angie Boggust',
+ 'Haihan Lin',
+ 'Kiran Ghadave',
+ 'Devin Lange',
+ 'Aspen Hopkins',
+ 'Brian Bollen',
+ 'Mahsan Nourani',
+ 'Alan Lundgard',
+ 'Jonathan Zong',
+ 'Justin Raynor',
+ 'Liudas Panavas']
+
+In [7]: exit()
