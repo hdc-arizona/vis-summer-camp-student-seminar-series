@@ -4,6 +4,41 @@
 
 - presentations on zoom, link to be shared privately
 - afterparty at gather.town sponsored by the Visual Analytics and Data Exploration Research Lab (vader.lab.asu.edu) at Arizona State University
+- Series so far:
+  - [Series 1](#series-1)
+  - [Series 2](#series-2)
+
+## Series 2
+
+Presenters:
+
+- Harini Suresh
+- Shae Esmaelli
+- Crystal Lee
+- Hyeok Kim
+- David Saffo
+- Sara Di Bartolomeo
+- Kairong Jiang
+- Angie Boggust
+- Haihan Lin
+- Kiran Ghadave
+- Devin Lange
+- Aspen Hopkins
+- Brian Bollen
+- Mahsan Nourani
+- Alan Lundgard
+- Jonathan Zong
+- Justin Raynor
+- Liudas Panavas
+
+### Tentative Schedule
+
+- Week 1, 2021-07-22: Harini Suresh, Shae Esmaelli, Crystal Lee
+- Week 2, 2021-07-29: Hyeok Kim, David Saffo, Sara Di Bartolomeo
+- Week 3, 2021-08-05: Kairon Jian, Angie Boggust, Haihan Lin
+- Week 4, 2021-08-13: Kiran Ghadave, Devin Lange, Aspen Hopkins
+- Week 5, 2021-08-20: Brian Bollen, Mahsan Nourani, Alan Lundgard
+- Week 6, 2021-08-27: Jonathan Zong, Justin Raynor, Liudas Panavas
 
 ## Series 1
 
