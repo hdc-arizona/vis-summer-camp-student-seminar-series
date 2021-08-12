@@ -36,9 +36,9 @@ Presenters:
 - Week 1, 2021-07-22: Aspen Hopkins, Shae Esmaelli, Crystal Lee
 - Week 2, 2021-07-29: David Saffo, Sara Di Bartolomeo
 - Week 3, 2021-08-05: Hyeok Kim, Kairong Jiang, Angie Boggust, Haihan Lin
-- Week 4, 2021-08-13: Kiran Ghadave, Devin Lange, Harini Suresh
-- Week 5, 2021-08-20: Brian Bollen, Jonathan Zong, Alan Lundgard
-- Week 6, 2021-08-27: Mahsan Nourani, Justin Raynor, Liudas Panavas
+- Week 4, 2021-08-12: Kiran Ghadave, Devin Lange, Harini Suresh
+- Week 5, 2021-08-19: Brian Bollen, Jonathan Zong, Alan Lundgard
+- Week 6, 2021-08-26: Mahsan Nourani, Justin Raynor, Liudas Panavas
 
 ## Series 1
 
