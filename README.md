@@ -38,7 +38,7 @@ Presenters:
 - Week 3, 2021-08-05: Hyeok Kim, Kairong Jiang, Angie Boggust, Haihan Lin
 - Week 4, 2021-08-12: Kiran Ghadave, Devin Lange, Harini Suresh
 - Week 5, 2021-08-19: Brian Bollen, Jonathan Zong
-- Week 6, 2021-08-26: Mahsan Nourani, Justin Raynor, Liudas Panavas, Alan Lundgard
+- Week 6, 2021-08-26: Mahsan Nourani, Justin Raynor, Liudas Panavas
 
 ## Series 1
 
